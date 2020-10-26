@@ -3,8 +3,8 @@
 
 -  name: Create an User to server Instance
    user:
-    name: {{ user }} 
-    password: {{ password }}
+    name: "{{ user }}"
+    password: "{{ password }}"
     groups:
       - docker
       - sudo 
@@ -12,3 +12,4 @@
     shell:  /bin/bash
     system: no
     createhome: yes
+    home: "/home/{{user}}"

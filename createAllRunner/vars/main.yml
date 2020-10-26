@@ -1,2 +1,5 @@
 ---
 # vars file for createAllRunner
+
+roles_path: /files
+checksum: e4a890fb2bcbbe1f68962486dbf6d72f

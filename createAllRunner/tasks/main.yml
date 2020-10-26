@@ -3,4 +3,11 @@
 
   - name: copy toml file to /etc/gitlab-runner 
     copy:
+      src: "{{ roles_path }}/config.toml"
+      dest: "/home/{{ user}}/gitlab-runner/config.toml"
+      #checksum: {{ checksum }}
+      owner: {{ user }}
+      group: sudo
+      mode: '0644'
+
       
