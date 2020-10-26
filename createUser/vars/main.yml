@@ -1,2 +1,5 @@
 ---
 # vars file for createUser
+
+user: name_of_you_user
+password: password_of_user

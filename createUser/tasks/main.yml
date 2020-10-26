@@ -2,4 +2,13 @@
 # tasks file for createUser
 
 -  name: Create an User to server Instance
-    
+   user:
+    name: {{ user }} 
+    password: {{ password }}
+    groups:
+      - docker
+      - sudo 
+    state: present
+    shell:  /bin/bash
+    system: no
+    createhome: yes
