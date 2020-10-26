@@ -2,4 +2,4 @@
 # vars file for createUser
 
 user: name_of_you_user
-password: password_of_user
+password: $6$z5tRnkd/aWjiFlT$seIfe0GYqAT7UQMr.SEBJhnLsG/mSqRQGR/cKIRbaVRhFW2W1RR2/ndV5C4LVG5UNDZdsjE0ajhu0uhALh2Lh0
