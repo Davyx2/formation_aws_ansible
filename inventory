@@ -1,0 +1,3 @@
+[all]
+54.36.177.62  ansible_ssh_private_key_file=../ssh/aws1/awskey  ansible_user=root  ansible_port=22 ansible_password=
+

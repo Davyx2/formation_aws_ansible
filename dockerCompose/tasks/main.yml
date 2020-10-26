@@ -1,0 +1,30 @@
+- name: install docker-compose 
+  get_url:
+    url: https://github.com/docker/compose/releases/download/{{version_docker-compose}}/docker-compose-Linux-x86_64
+    dest: /usr/local/bin/docker-compose
+    mode: 'a+x'
+
+
+- name: copy compose to a serveur 
+  copy:
+    src: /home/ubuntu/Apps/docker-compose
+    dest: /home/ubuntu/docker-compose.yml
+    owner: ubuntu
+    group: sudo
+    mode: 0644  
+
+
+- name: pull all images in stack
+  docker-compose:
+    project_src: ubuntu
+    pull: yes
+    state: present
+
+
+- name: launch stack
+  docker-compose:
+    project_src: ubuntu
+    build: no
+  register: output
+
+

@@ -1,0 +1,10 @@
+---
+- hosts: all
+  remote_user: ubuntu
+  become: true
+  tasks:
+    - include: ../ansible/installDocker/tasks/main.yml
+    - include: ../ansible/dockerCompose/tasks/main.yml
+    - include: ../ansible/gitlabRunner/tasks/main.yml
+    - include: ../ansible/createAllRunner/tasks/main.yml
+    

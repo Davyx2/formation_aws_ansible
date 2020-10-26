@@ -1,0 +1,34 @@
+- name: curl script
+  shell: curl -fsSL https://get.docker.com -o get-docker.sh
+  args:
+    warn: no
+
+- name: execute le script dinstallation
+  shell: sh get-docker.sh
+
+- name: add ubuntu to docker group
+  user:
+    name: ubuntu
+    groups: docker
+    append: yes
+
+- name: ensure docker service is running
+  service:
+    name: "docker"
+    state: started
+    enabled: yes
+
+# dont use docker_image module because there is a bug with py3 (already fix in develop branch)
+- name: pull image
+  shell: >-
+    docker pull ylorenzati/mygoapp
+# don't use docker_container module because there is a bug with py3 (already fix in develop branch)
+- name: docker ps goapp
+  shell: >-
+    docker ps -f name=goapp
+  register: result
+
+- name: start container
+  shell: >-
+    docker run -d -t -p {{ports}}:8080 --name goapp -h {{ ansible_hostname }} ylorenzati/mygoapp
+  when: result.stdout.find('goapp') == -1

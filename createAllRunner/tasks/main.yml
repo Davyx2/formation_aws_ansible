@@ -1,0 +1,6 @@
+---
+# tasks file for createAllRunner
+
+  - name: copy toml file to /etc/gitlab-runner 
+    copy:
+      

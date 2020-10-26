@@ -1,0 +1,302 @@
+concurrent = 1
+check_interval = 0
+
+[session_server]
+  session_timeout = 1800
+
+[[runners]]
+  name = "runner test and deploy to a VPS ovh"
+  url = "https://gitlab.com/"
+  token = "5riLVyL_ix419QTRGsFY"
+  executor = "shell"
+  [runners.custom_build_dir]
+  [runners.cache]
+    [runners.cache.s3]
+    [runners.cache.gcs]
+    [runners.cache.azure]
+
+[[runners]]
+  name = "dashboard wanoon ovh"
+  url = "https://gitlab.com/"
+  token = "RAnfskARXhPmL3w1VisA"
+  executor = "shell"
+  [runners.custom_build_dir]
+  [runners.cache]
+    [runners.cache.s3]
+    [runners.cache.gcs]
+    [runners.cache.azure]
+
+[[runners]]
+  name = "app profils wanoon"
+  url = "https://gitlab.com/"
+  token = "cq-NuHwzJQa-PyjYU-tL"
+  executor = "shell"
+  [runners.custom_build_dir]
+  [runners.cache]
+    [runners.cache.s3]
+    [runners.cache.gcs]
+    [runners.cache.azure]
+
+[[runners]]
+  name = "wanoon_job_backendovh"
+  url = "https://gitlab.com/"
+  token = "Ju5wLisyKLiuyi8P53uc"
+  executor = "shell"
+  [runners.custom_build_dir]
+  [runners.cache]
+    [runners.cache.s3]
+    [runners.cache.gcs]
+    [runners.cache.azure]
+
+[[runners]]
+  name = "wanoon_dashboardovh"
+  url = "https://gitlab.com/"
+  token = "DYJzafqjy8b7Jn3G2Rkx"
+  executor = "shell"
+  [runners.custom_build_dir]
+  [runners.cache]
+    [runners.cache.s3]
+    [runners.cache.gcs]
+    [runners.cache.azure]
+
+[[runners]]
+  name = "afrikpharmaFrontoffice"
+  url = "https://gitlab.com/"
+  token = "ey-N19wWgDys3vLf718y"
+  executor = "shell"
+  [runners.custom_build_dir]
+  [runners.cache]
+    [runners.cache.s3]
+    [runners.cache.gcs]
+    [runners.cache.azure]
+
+[[runners]]
+  name = "osspo_job_backend"
+  url = "https://gitlab.com/"
+  token = "nXFWzPRGzo9skg8sUKzL"
+  executor = "shell"
+  [runners.custom_build_dir]
+  [runners.cache]
+    [runners.cache.s3]
+    [runners.cache.gcs]
+    [runners.cache.azure]
+
+[[runners]]
+  name = "osspo_job_frontend"
+  url = "https://gitlab.com/"
+  token = "gzq7SFx7MWMaz2GtEaro"
+  executor = "shell"
+  [runners.custom_build_dir]
+  [runners.cache]
+    [runners.cache.s3]
+    [runners.cache.gcs]
+    [runners.cache.azure]
+
+[[runners]]
+  name = "osspo_job_admin"
+  url = "https://gitlab.com/"
+  token = "xsP376yR6iMJVhHRNZyL"
+  executor = "shell"
+  [runners.custom_build_dir]
+  [runners.cache]
+    [runners.cache.s3]
+    [runners.cache.gcs]
+    [runners.cache.azure]
+
+[[runners]]
+  name = "frontend_resto"
+  url = "https://gitlab.com/"
+  token = "sB7mv7s4VBo34PQxvH7z"
+  executor = "shell"
+  [runners.custom_build_dir]
+  [runners.cache]
+    [runners.cache.s3]
+    [runners.cache.gcs]
+    [runners.cache.azure]
+
+[[runners]]
+  name = "lebondej_frontend"
+  url = "https://gitlab.com/"
+  token = "tSQozLY3bkVpkbAhKgTV"
+  executor = "shell"
+  [runners.custom_build_dir]
+  [runners.cache]
+    [runners.cache.s3]
+    [runners.cache.gcs]
+    [runners.cache.azure]
+
+[[runners]]
+  name = "api_resto"
+  url = "https://gitlab.com/"
+  token = "mihmVPMpKzuA_AyzFrHe"
+  executor = "shell"
+  [runners.custom_build_dir]
+  [runners.cache]
+    [runners.cache.s3]
+    [runners.cache.gcs]
+    [runners.cache.azure]
+
+[[runners]]
+  name = "lebondej_backend"
+  url = "https://gitlab.com/"
+  token = "5xszWhnZ9z7wC-f9bQvs"
+  executor = "shell"
+  [runners.custom_build_dir]
+  [runners.cache]
+    [runners.cache.s3]
+    [runners.cache.gcs]
+    [runners.cache.azure]
+
+[[runners]]
+  name = "afrikpharma_api_gateway_frontoffice"
+  url = "https://gitlab.com/"
+  token = "U7nyohssPLvBhmxxQx99"
+  executor = "shell"
+  [runners.custom_build_dir]
+  [runners.cache]
+    [runners.cache.s3]
+    [runners.cache.gcs]
+    [runners.cache.azure]
+
+[[runners]]
+  name = "afrikpharma_api_gateway_backoffice"
+  url = "https://gitlab.com/"
+  token = "E-Ae2ss1SDzEMoDsukg7"
+  executor = "shell"
+  [runners.custom_build_dir]
+  [runners.cache]
+    [runners.cache.s3]
+    [runners.cache.gcs]
+    [runners.cache.azure]
+
+[[runners]]
+  name = "afrikpharmaStock"
+  url = "https://gitlab.com/"
+  token = "h6SZ9tVVVhKgF3dwzSPd"
+  executor = "shell"
+  [runners.custom_build_dir]
+  [runners.cache]
+    [runners.cache.s3]
+    [runners.cache.gcs]
+    [runners.cache.azure]
+
+[[runners]]
+  name = "afrikpharmaOrder"
+  url = "https://gitlab.com/"
+  token = "iqhpnB-FuqUeYznG6BDH"
+  executor = "shell"
+  [runners.custom_build_dir]
+  [runners.cache]
+    [runners.cache.s3]
+    [runners.cache.gcs]
+    [runners.cache.azure]
+
+[[runners]]
+  name = "afrikpharmaQuotationInvoice"
+  url = "https://gitlab.com/"
+  token = "MJYMzpYGW4nN8N-iQWzk"
+  executor = "shell"
+  [runners.custom_build_dir]
+  [runners.cache]
+    [runners.cache.s3]
+    [runners.cache.gcs]
+    [runners.cache.azure]
+
+[[runners]]
+  name = "afrikpharma_backoffice"
+  url = "https://gitlab.com/"
+  token = "JjAwq7zpqYY9yQQw6B5H"
+  executor = "shell"
+  [runners.custom_build_dir]
+  [runners.cache]
+    [runners.cache.s3]
+    [runners.cache.gcs]
+    [runners.cache.azure]
+
+[[runners]]
+  name = "afrikpharma_api_gateway"
+  url = "https://gitlab.com/"
+  token = "ryR8jQFw47pXGWqcwfu_"
+  executor = "shell"
+  [runners.custom_build_dir]
+  [runners.cache]
+    [runners.cache.s3]
+    [runners.cache.gcs]
+    [runners.cache.azure]
+
+[[runners]]
+  name = "rr_api_gateway"
+  url = "https://gitlab.com/"
+  token = "S6m67_g37zCYpRePtyjZ"
+  executor = "shell"
+  [runners.custom_build_dir]
+  [runners.cache]
+    [runners.cache.s3]
+    [runners.cache.gcs]
+    [runners.cache.azure]
+
+[[runners]]
+  name = "rr_api_gateway_boutique"
+  url = "https://gitlab.com/"
+  token = "-WniA5Y-ATunBMcs5WGx"
+  executor = "shell"
+  [runners.custom_build_dir]
+  [runners.cache]
+    [runners.cache.s3]
+    [runners.cache.gcs]
+    [runners.cache.azure]
+
+[[runners]]
+  name = "rr_trade"
+  url = "https://gitlab.com/"
+  token = "BK6GQaPdSEYHanYMuY-c"
+  executor = "shell"
+  [runners.custom_build_dir]
+  [runners.cache]
+    [runners.cache.s3]
+    [runners.cache.gcs]
+    [runners.cache.azure]
+
+[[runners]]
+  name = "rr_boutique"
+  url = "https://gitlab.com/"
+  token = "EQj_Ld6EDDxSvunwmuNG"
+  executor = "shell"
+  [runners.custom_build_dir]
+  [runners.cache]
+    [runners.cache.s3]
+    [runners.cache.gcs]
+    [runners.cache.azure]
+
+[[runners]]
+  name = "rr_frontend"
+  url = "https://gitlab.com/"
+  token = "dLYX_b1o3RggreERa-jb"
+  executor = "shell"
+  [runners.custom_build_dir]
+  [runners.cache]
+    [runners.cache.s3]
+    [runners.cache.gcs]
+    [runners.cache.azure]
+
+[[runners]]
+  name = "rr_boutique_frontend"
+  url = "https://gitlab.com/"
+  token = "J6bxnrqHQo-kCF1n8yx-"
+  executor = "shell"
+  [runners.custom_build_dir]
+  [runners.cache]
+    [runners.cache.s3]
+    [runners.cache.gcs]
+    [runners.cache.azure]
+
+[[runners]]
+  name = "rr_new_frontend"
+  url = "https://gitlab.com/"
+  token = "KH9pAVzGyjLbFCP3Gx_z"
+  executor = "shell"
+  [runners.custom_build_dir]
+  [runners.cache]
+    [runners.cache.s3]
+    [runners.cache.gcs]
+    [runners.cache.azure]
