@@ -1,23 +1,19 @@
-- name: curl binaire to install docker-compose
-  get_url:
-    url:  https://gitlab-runner-downloads.s3.amazonaws.com/latest/binaries/gitlab-runner-linux-amd64
-    dest: /usr/local/bin/gitlab-runner
-    mode: 'a+x'
+- name: copy toml file to /etc/gitlab-runner 
+  copy:
+    src: pod.yml
+    dest: "/home/vagrant/pod.yml"
+    #checksum: {{ checksum }}
+    owner: root
+    group: sudo
+    mode: '0644'
 
-- name: add gitlab-runner to sudo group
+- name: add gitlab-runner
   user:
-    name: "gitlab-runner"
-    groups: "sudo"
+    name: "{{ runner_user }}"
     comment: "Gitlab runner user"
     shell: /bin/bash
-    home: /home/gitlab-runner
+    create_home: yes
     append: yes
 
 - name: install gitlab-runner
   shell: gitlab-runner install --user=gitlab-runner --working-directory=/home/gitlab-runner
-
-- name:  start service gitlab_runner
-  service:
-    name: "gitlab-runner"
-    state: started
-    enabled: yes

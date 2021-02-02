@@ -1,2 +1,3 @@
 ---
 # vars file for gitlabRunner
+runner_user: "gitlab-runner"

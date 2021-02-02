@@ -1,2 +1,7 @@
 ---
 # handlers file for gitlabRunner
+- name:  start service gitlab_runner
+  service:
+    name: "gitlab-runner"
+    state: started
+    enabled: yes

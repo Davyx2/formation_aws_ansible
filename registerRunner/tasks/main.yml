@@ -1,0 +1,15 @@
+---
+# tasks file for registerRunner
+
+- name: Register gitlab shell runner
+    command: |
+      gitlab-runner register \
+      --non-interactive \
+      --url "https://gitlab.com/" \
+      --registration-token "{{ reg_token }}" \
+      --executor "shell" \
+      --description "shell executor" \
+      --tag-list "azure, shell, ansible" \
+      --run-untagged="false" \
+      --locked="true" \
+      --access-level="ref_protected"

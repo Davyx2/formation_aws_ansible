@@ -1,0 +1,8 @@
+---
+# vars file for registerRunner
+
+### create an access token to your account 
+access_token: 
+
+### set a token which concern this project
+registerToken: 

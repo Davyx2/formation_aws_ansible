@@ -14,17 +14,7 @@
     mode: 0644  
 
 
-- name: pull all images in stack
-  docker-compose:
-    project_src: ubuntu
-    pull: yes
-    state: present
-
-
-- name: launch stack
-  docker-compose:
-    project_src: ubuntu
-    build: no
-  register: output
+- name: check installation
+  shell: docker-compose -v
 
 
