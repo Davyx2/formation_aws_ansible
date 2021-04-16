@@ -3,5 +3,6 @@
 - name:  start service gitlab_runner
   service:
     name: "gitlab-runner"
-    state: started
+    state: restarted
     enabled: yes
+  listen: runner_handler

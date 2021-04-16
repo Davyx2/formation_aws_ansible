@@ -1,11 +1,14 @@
 - name: copy toml file to /etc/gitlab-runner 
-  copy:
+  template:
     src: pod.yml
     dest: "/home/vagrant/pod.yml"
     #checksum: {{ checksum }}
     owner: root
     group: sudo
     mode: '0644'
+    notify:
+      - runner_handler
+      
 
 - name: add gitlab-runner
   user:
